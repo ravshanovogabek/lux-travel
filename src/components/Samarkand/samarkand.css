@@ -1,0 +1,281 @@
+
+  /* Main Container */
+  .samarkand {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding: 0px 15px;
+    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.195), rgba(0, 0, 0, 0.518)), url(https://r4.wallpaperflare.com/wallpaper/619/964/973/uzbekistan-samarkand-gilded-madrasa-madrasah-tillya-kari-wallpaper-63d7a69eebcc03505efe58dc9cc4793e.jpg)
+  }
+  
+  .main-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 50%;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    margin-left: 120px;
+  }
+  
+  /* Header */
+  header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  header .max {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  header a:hover {
+    opacity: 0.8;
+    transform: scale(1.1); /* Scale up on hover */
+  }
+  
+  /* Logo Image */
+  header a img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Makes the image circular */
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  
+  header a img:hover {
+    transform: rotate(15deg); /* Slight rotation on hover */
+    filter: brightness(1.2); /* Increase brightness on hover */
+  }
+  
+  /* Hamburger Icon */
+  .main-hamburger {
+    width: 25px;
+    
+  }
+  
+  /* Create the three lines of the hamburger menu */
+  
+  
+  /* Position the lines to form the hamburger */
+  .main-hamburger::before {
+    transform: translateY(-10px);
+  }
+  
+  .main-hamburger::after {
+    transform: translateY(10px);
+  }
+  
+  /* Hamburger Button */
+  header button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 10%;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+    margin-right: 150px;
+    outline: none;
+  }
+  
+  /* Rotate animation for the hamburger lines when the menu is open */
+  header button.active .main-hamburger {
+    transform: rotate(45deg);
+    background-color: transparent; /* Hide the middle line */
+  }
+  
+  header button.active .main-hamburger::before {
+    transform: rotate(-90deg) translateX(-10px);
+  }
+  
+  header button.active .main-hamburger::after {
+    transform: rotate(-90deg) translateX(-10px);
+  }
+  
+  /* Button Hover Effects */
+  header button:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+  }
+  
+  header button:active {
+    transform: scale(1.05);
+  }
+  
+  /* Menu Styles */
+  .main-menu {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(12, 11, 10, 0.856);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.777);
+    position: absolute;
+    right: 20px;
+    top: 60px;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  
+  .main-menu a {
+    color: #f4efef;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .main-menu a:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Section Styles */
+  .main-section {
+    padding: 60px 0;
+  }
+  
+  .main-section .dividir {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .main-text {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  .paragraph {
+    font-size: 1rem;
+    color: #ddd;
+    margin-bottom: 20px;
+  }
+  
+  .ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  
+  
+  .card {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    color: white;
+    width: 250px;
+  }
+  
+  .text {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #ff002f;
+    color: #fff;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    
+  }
+  
+  .hero-btn:hover {
+    background-color: #b30000;
+  }
+  
+  .Slide {
+    margin-top: 30px;
+  }
+  
+  .main-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .main-logo {
+      margin-left: 290px;
+      
+    }
+  
+    header .max {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    header button {
+      margin-left: 300px;
+      margin-top: 30px;
+      
+    }
+  
+    .main-menu {
+      right: 10px;
+      top: 140px;
+      width: 60%;
+      padding: 10px;
+      box-shadow: none;
+      
+    }
+  
+    .main-menu a {
+      padding: 10px;
+    }
+  
+    .main-text {
+      font-size: 2rem;
+    }
+  
+    .paragraph {
+      font-size: 0.9rem;
+    }
+  
+    .card {
+      width: 100%;
+    }
+  
+    .hero-btn {
+      padding: 12px 25px;
+    }
+  
+    .main-img {
+      height: 120px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .main-text {
+      font-size: 1.5rem;
+    }
+  
+    .paragraph {
+      font-size: 0.8rem;
+    }
+  
+    .card {
+      width: 100%;
+    }
+  
+    .hero-btn {
+      padding: 10px 20px;
+    }
+  
+    .main-img {
+      height: 100px;
+    }
+  }
+  

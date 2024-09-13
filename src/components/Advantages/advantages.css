@@ -1,0 +1,91 @@
+.advantages {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  background-image: linear-gradient(to bottom right, rgba(34, 34, 34, 0), rgba(34, 34, 34, 0)), 
+    url(https://r4.wallpaperflare.com/wallpaper/404/367/794/landscape-mountains-nature-lake-vegetation-hd-wallpaper-65806b5fba67faafffee6ad76a31f1aa.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.advantages-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.advantages-title {
+  font-size: 2.5rem;
+  color: #f9f4f4;
+  margin-bottom: 20px;
+}
+
+.advantages-subtitle {
+  font-size: 1.5rem;
+  color: #f9f5f5;
+  margin-bottom: 40px;
+}
+
+.advantages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.advantage-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: LEFT;
+}
+
+.advantage-item .icon {
+  height: 40px;
+  width: 40px;
+  margin-bottom: 10px;
+}
+
+.advantage-item h4 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.advantage-item p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.book-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ef1f1ce3; /* Example color */
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+}
+
+.book-button:hover {
+  background-color: #ff0606; /* Example hover color */
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .advantages-title {
+    font-size: 2rem;
+  }
+
+  .advantages-subtitle {
+    font-size: 1.25rem;
+  }
+
+  .advantage-item {
+    padding: 15px;
+  }
+}
